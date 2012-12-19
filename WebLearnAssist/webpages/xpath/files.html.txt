@@ -1,0 +1,439 @@
+Name: html, Value: , Number of child nodes: 2, XPath: /html
+--Name: head, Value: , Number of child nodes: 4, XPath: /html/head
+----Name: link, Value: , Number of child nodes: 0, XPath: /html/head/link
+----Name: title, Value: , Number of child nodes: 1, XPath: /html/head/title
+------Name: #text, Value: 无标题文档, Number of child nodes: 0, XPath: /html/head/title/#text
+----Name: link, Value: , Number of child nodes: 0, XPath: /html/head/link[2]
+----Name: link, Value: , Number of child nodes: 0, XPath: /html/head/link[2]
+--Name: body, Value: , Number of child nodes: 5, XPath: /html/body
+----Name: script, Value: , Number of child nodes: 1, XPath: /html/body/script
+------Name: #text, Value: , Number of child nodes: 0, XPath: /html/body/script/#text
+----Name: script, Value: , Number of child nodes: 1, XPath: /html/body/script[2]
+------Name: #text, Value: <!--
+
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+//-->
+, Number of child nodes: 0, XPath: /html/body/script[2]/#text
+----Name: script, Value: , Number of child nodes: 1, XPath: /html/body/script[2]
+------Name: #text, Value: <!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+
+function MM_showHideLayers() { //v6.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+function NN_showImage1()
+{
+var obj1 = document.getElementById("ImageTab1");
+var obj2 = document.getElementById("ImageTab2");
+obj1.src="/images/new/YQ_1_on.jpg";
+obj2.src="/images/new/YQ_2_no.jpg";
+}
+function NN_showImage2()
+{
+var obj1 = document.getElementById("ImageTab1");
+var obj2 = document.getElementById("ImageTab2");
+obj1.src="/images/new/YQ_1_no.jpg";
+obj2.src="/images/new/YQ_2_on.jpg";
+}
+function NN_showImage(num,k)
+{       
+        for(i=1; i<=num; i+=1)
+        {
+                var obj1 = document.getElementById("ImageTab"+i);
+                if(i!=k){
+                        obj1.background="/images/new/Y_bg_no.gif";
+                }
+                else{
+                        obj1.background="/images/new/Y_bg_on.gif";
+                }
+                        
+        }
+}
+
+//每次用户选中某个category标签就重新设置新增文件的url后面的default_cate的值
+function setDefaultCate(num)
+{
+        var new_url_obj = document.getElementById("new_url");
+        new_url_obj.href = new_url_obj.href.split('&')[0]+"&default_cate="+num+"&course_id=92742";
+}
+
+//-->
+, Number of child nodes: 0, XPath: /html/body/script[2]/#text
+----Name: table, Value: , Number of child nodes: 5, XPath: /html/body/table
+------Name: tr, Value: , Number of child nodes: 1, XPath: /html/body/table/tr
+--------Name: td, Value: , Number of child nodes: 2, XPath: /html/body/table/tr/td
+----------Name: img, Value: , Number of child nodes: 0, XPath: /html/body/table/tr/td/img
+----------Name: #text, Value:  人工智能导论, Number of child nodes: 0, XPath: /html/body/table/tr/td/#text
+------Name: tr, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]
+--------Name: td, Value: , Number of child nodes: 0, XPath: /html/body/table/tr[2]/td
+------Name: tr, Value: , Number of child nodes: 2, XPath: /html/body/table/tr[2]
+--------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td
+----------Name: a, Value: , Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/a
+--------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td[3]
+----------Name: font, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td[3]/font
+------------Name: #text, Value: 点击带下划线的列标题，可进行排序, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td[3]/font/#text
+------Name: tr, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]
+--------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td
+----------Name: table, Value: , Number of child nodes: 2, XPath: /html/body/table/tr[2]/td/table
+------------Name: tr, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/table/tr
+--------------Name: td, Value: , Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/table/tr/td
+------------Name: tr, Value: , Number of child nodes: 2, XPath: /html/body/table/tr[2]/td/table/tr[2]
+--------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/table/tr[2]/td
+----------------Name: table, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/table/tr[2]/td/table
+------------------Name: tr, Value: , Number of child nodes: 2, XPath: /html/body/table/tr[2]/td/table/tr[2]/td/table/tr
+--------------------Name: td, Value: , Number of child nodes: 2, XPath: /html/body/table/tr[2]/td/table/tr[2]/td/table/tr/td
+----------------------Name: input, Value: , Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/table/tr[2]/td/table/tr/td/input
+----------------------Name: table, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/table/tr[2]/td/table/tr/td/table
+------------------------Name: tr, Value: , Number of child nodes: 6, XPath: /html/body/table/tr[2]/td/table/tr[2]/td/table/tr/td/table/tr
+--------------------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/table/tr[2]/td/table/tr/td/table/tr/td
+----------------------------Name: img, Value: , Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/table/tr[2]/td/table/tr/td/table/tr/td/img
+--------------------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/table/tr[2]/td/table/tr/td/table/tr/td[2]
+----------------------------Name: #text, Value: 电子教案, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/table/tr[2]/td/table/tr/td/table/tr/td[2]/#text
+--------------------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/table/tr[2]/td/table/tr/td/table/tr/td[2]
+----------------------------Name: img, Value: , Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/table/tr[2]/td/table/tr/td/table/tr/td[2]/img
+--------------------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/table/tr[2]/td/table/tr/td/table/tr/td[2]
+----------------------------Name: img, Value: , Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/table/tr[2]/td/table/tr/td/table/tr/td[2]/img
+--------------------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/table/tr[2]/td/table/tr/td/table/tr/td[2]
+----------------------------Name: #text, Value: 作业相关, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/table/tr[2]/td/table/tr/td/table/tr/td[2]/#text
+--------------------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/table/tr[2]/td/table/tr/td/table/tr/td[2]
+----------------------------Name: img, Value: , Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/table/tr[2]/td/table/tr/td/table/tr/td[2]/img
+--------------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/table/tr[2]/td/table/tr/td[2]
+----------------------Name: #text, Value:  , Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/table/tr[2]/td/table/tr/td[2]/#text
+--------------Name: td, Value: , Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/table/tr[2]/td[3]
+------Name: tr, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]
+--------Name: td, Value: , Number of child nodes: 2, XPath: /html/body/table/tr[2]/td
+----------Name: div, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div
+------------Name: table, Value: , Number of child nodes: 17, XPath: /html/body/table/tr[2]/td/div/table
+--------------Name: tr, Value: , Number of child nodes: 5, XPath: /html/body/table/tr[2]/td/div/table/tr
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr/td
+------------------Name: a, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr/td/a
+--------------------Name: #text, Value: 序号, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr/td/a/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr/td[2]
+------------------Name: a, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr/td[2]/a
+--------------------Name: #text, Value: 标题, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr/td[2]/a/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr/td[2]
+------------------Name: #text, Value: 简要说明, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr/td[2]/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr/td[2]
+------------------Name: #text, Value: 文件大小, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr/td[2]/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr/td[2]
+------------------Name: a, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr/td[2]/a
+--------------------Name: #text, Value: 上载时间, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr/td[2]/a/#text
+--------------Name: tr, Value: , Number of child nodes: 6, XPath: /html/body/table/tr[2]/td/div/table/tr[2]
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td
+------------------Name: #text, Value: 1, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td/#text
+----------------Name: #comment, Value: <td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92742&getfilelink=course_info_965407967.pdf&id=849384","849384", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>0. course information</a></td>, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/#comment
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: a, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/a
+--------------------Name: #text, Value: 0. course information, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/a/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: #text, Value: 课程信息, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: #text, Value: 677.1K, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: #text, Value: 2012-09-12, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/#text
+--------------Name: tr, Value: , Number of child nodes: 6, XPath: /html/body/table/tr[2]/td/div/table/tr[2]
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td
+------------------Name: #text, Value: 2, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td/#text
+----------------Name: #comment, Value: <td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92742&getfilelink=introduction-part-20120911_722503859.pdf&id=849392","849392", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>1. introduction</a></td>, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/#comment
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: a, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/a
+--------------------Name: #text, Value: 1. introduction, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/a/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: #text, Value: what is AI, history of AI, the state of the art, to be continued, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: #text, Value: 3.48M, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: #text, Value: 2012-09-12, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/#text
+--------------Name: tr, Value: , Number of child nodes: 6, XPath: /html/body/table/tr[2]/td/div/table/tr[2]
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td
+------------------Name: #text, Value: 3, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td/#text
+----------------Name: #comment, Value: <td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92742&getfilelink=introduction_164807577.pdf&id=855110","855110", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>1. introduction (completed version)</a></td>, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/#comment
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: a, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/a
+--------------------Name: #text, Value: 1. introduction (completed version), Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/a/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: #text, Value: what is AI, history of AI, the state of the art, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: #text, Value: 6.69M, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: #text, Value: 2012-09-18, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/#text
+--------------Name: tr, Value: , Number of child nodes: 6, XPath: /html/body/table/tr[2]/td/div/table/tr[2]
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td
+------------------Name: #text, Value: 4, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td/#text
+----------------Name: #comment, Value: <td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92742&getfilelink=uninformed_search-part-20120918_52050206.pdf&id=855112","855112", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>2. uninformed search</a></td>, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/#comment
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: a, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/a
+--------------------Name: #text, Value: 2. uninformed search, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/a/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: #text, Value: problem-solving agents, problem formulation, tree search algorithms, to be continued, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: #text, Value: 759.9K, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: #text, Value: 2012-09-18, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/#text
+--------------Name: tr, Value: , Number of child nodes: 6, XPath: /html/body/table/tr[2]/td/div/table/tr[2]
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td
+------------------Name: #text, Value: 5, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td/#text
+----------------Name: #comment, Value: <td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92742&getfilelink=uninformed_search_369408446.pdf&id=859565","859565", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>2. uninformed search (complete</a></td>, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/#comment
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: a, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/a
+--------------------Name: #text, Value: 2. uninformed search (complete, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/a/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: #text, Value: problem-solving agents, problem formulation, tree search algorithms, bfs, ucs, dfs, l-dfs, ids, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: #text, Value: 1.45M, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: #text, Value: 2012-09-25, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/#text
+--------------Name: tr, Value: , Number of child nodes: 6, XPath: /html/body/table/tr[2]/td/div/table/tr[2]
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td
+------------------Name: #text, Value: 6, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td/#text
+----------------Name: #comment, Value: <td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92742&getfilelink=informed_search_449208809.pdf&id=859567","859567", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>3. informed search</a></td>, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/#comment
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: a, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/a
+--------------------Name: #text, Value: 3. informed search, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/a/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: #text, Value: greedy best-first, A*, heuristic, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: #text, Value: 669.5K, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: #text, Value: 2012-09-25, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/#text
+--------------Name: tr, Value: , Number of child nodes: 6, XPath: /html/body/table/tr[2]/td/div/table/tr[2]
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td
+------------------Name: #text, Value: 7, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td/#text
+----------------Name: #comment, Value: <td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92742&getfilelink=beyond_classical_search-part-20121009_504105934.pdf&id=864720","864720", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>4. beyond classical search</a></td>, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/#comment
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: a, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/a
+--------------------Name: #text, Value: 4. beyond classical search, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/a/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: #text, Value: local search, search with undeterministic actions, search with Partial Observations, to be continued, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: #text, Value: 1.12M, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: #text, Value: 2012-10-09, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/#text
+--------------Name: tr, Value: , Number of child nodes: 6, XPath: /html/body/table/tr[2]/td/div/table/tr[2]
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td
+------------------Name: #text, Value: 8, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td/#text
+----------------Name: #comment, Value: <td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92742&getfilelink=beyond_classical_search_514608474.pdf&id=868972","868972", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>4. beyond classical search (co</a></td>, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/#comment
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: a, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/a
+--------------------Name: #text, Value: 4. beyond classical search (co, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/a/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: #text, Value: local search, search with undeterministic actions, search with Partial Observations, online search, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: #text, Value: 1.85M, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: #text, Value: 2012-10-17, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/#text
+--------------Name: tr, Value: , Number of child nodes: 6, XPath: /html/body/table/tr[2]/td/div/table/tr[2]
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td
+------------------Name: #text, Value: 9, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td/#text
+----------------Name: #comment, Value: <td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92742&getfilelink=adversarial_search_642905562.pdf&id=868975","868975", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>5. adversarial_search</a></td>, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/#comment
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: a, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/a
+--------------------Name: #text, Value: 5. adversarial_search, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/a/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: #text, Value: minimax algorithm, alpha-beta pruning, expectminimax algorithm, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: #text, Value: 0.99M, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: #text, Value: 2012-10-17, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/#text
+--------------Name: tr, Value: , Number of child nodes: 6, XPath: /html/body/table/tr[2]/td/div/table/tr[2]
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td
+------------------Name: #text, Value: 10, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td/#text
+----------------Name: #comment, Value: <td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92742&getfilelink=constrained_satisfaction_problems_545303820.pdf&id=872851","872851", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>6. CSP</a></td>, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/#comment
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: a, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/a
+--------------------Name: #text, Value: 6. CSP, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/a/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: #text, Value: constrained_satisfaction_problems, backtracing algorithm, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: #text, Value: 865.8K, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: #text, Value: 2012-10-24, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/#text
+--------------Name: tr, Value: , Number of child nodes: 6, XPath: /html/body/table/tr[2]/td/div/table/tr[2]
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td
+------------------Name: #text, Value: 11, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td/#text
+----------------Name: #comment, Value: <td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92742&getfilelink=logical_agents-part_9565077.pdf&id=872856","872856", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>7. logical agents</a></td>, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/#comment
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: a, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/a
+--------------------Name: #text, Value: 7. logical agents, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/a/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: #text, Value: knowledge based agents, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: #text, Value: 705.3K, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: #text, Value: 2012-10-24, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/#text
+--------------Name: tr, Value: , Number of child nodes: 6, XPath: /html/body/table/tr[2]/td/div/table/tr[2]
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td
+------------------Name: #text, Value: 12, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td/#text
+----------------Name: #comment, Value: <td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92742&getfilelink=logical_agents_199607228.pdf&id=877703","877703", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>7. logical agents (completed v</a></td>, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/#comment
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: a, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/a
+--------------------Name: #text, Value: 7. logical agents (completed v, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/a/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: #text, Value: knowledge based agents; logic; propositional (Boolean) logic; Inference rules and theorem proving, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: #text, Value: 914.6K, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: #text, Value: 2012-11-01, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/#text
+--------------Name: tr, Value: , Number of child nodes: 6, XPath: /html/body/table/tr[2]/td/div/table/tr[2]
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td
+------------------Name: #text, Value: 13, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td/#text
+----------------Name: #comment, Value: <td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92742&getfilelink=uncertainty-part-20121030_982404293.pdf&id=877714","877714", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>8. Uncertainty</a></td>, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/#comment
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: a, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/a
+--------------------Name: #text, Value: 8. Uncertainty, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/a/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: #text, Value: Uncertainty; Probability; Syntax and Semantics, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: #text, Value: 268.4K, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: #text, Value: 2012-11-05, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/#text
+--------------Name: tr, Value: , Number of child nodes: 6, XPath: /html/body/table/tr[2]/td/div/table/tr[2]
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td
+------------------Name: #text, Value: 14, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td/#text
+----------------Name: #comment, Value: <td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92742&getfilelink=uncertainty_84904807.pdf&id=880861","880861", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>8. Uncertainty (completed vers</a></td>, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/#comment
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: a, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/a
+--------------------Name: #text, Value: 8. Uncertainty (completed vers, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/a/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: #text, Value: Uncertainty; Probability; Syntax and Semantics; Independence and Conditional Independence; Inference, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: #text, Value: 351.4K, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: #text, Value: 2012-11-07, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/#text
+--------------Name: tr, Value: , Number of child nodes: 6, XPath: /html/body/table/tr[2]/td/div/table/tr[2]
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td
+------------------Name: #text, Value: 15, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td/#text
+----------------Name: #comment, Value: <td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92742&getfilelink=bayesian_networks-part-20121106_217406027.pdf&id=880862","880862", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>9. Bayesian networks</a></td>, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/#comment
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: a, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/a
+--------------------Name: #text, Value: 9. Bayesian networks, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/a/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: #text, Value: Syntax; Semantics; Parameterized distributions, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: #text, Value: 384.9K, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: #text, Value: 2012-11-07, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/#text
+--------------Name: tr, Value: , Number of child nodes: 6, XPath: /html/body/table/tr[2]/td/div/table/tr[2]
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td
+------------------Name: #text, Value: 16, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td/#text
+----------------Name: #comment, Value: <td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92742&getfilelink=bayesian_networks_233201991.pdf&id=885257","885257", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>9. Bayesian networks (complet</a></td>, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/#comment
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: a, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/a
+--------------------Name: #text, Value: 9. Bayesian networks (complet, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/a/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: #text, Value: Syntax; Semantics; Parameterized distributions; Inference, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: #text, Value: 0.95M, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]
+------------------Name: #text, Value: 2012-11-14, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div/table/tr[2]/td[3]/#text
+----------Name: div, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div[2]
+------------Name: table, Value: , Number of child nodes: 6, XPath: /html/body/table/tr[2]/td/div[2]/table
+--------------Name: tr, Value: , Number of child nodes: 5, XPath: /html/body/table/tr[2]/td/div[2]/table/tr
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div[2]/table/tr/td
+------------------Name: a, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div[2]/table/tr/td/a
+--------------------Name: #text, Value: 序号, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div[2]/table/tr/td/a/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div[2]/table/tr/td[2]
+------------------Name: a, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div[2]/table/tr/td[2]/a
+--------------------Name: #text, Value: 标题, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div[2]/table/tr/td[2]/a/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div[2]/table/tr/td[2]
+------------------Name: #text, Value: 简要说明, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div[2]/table/tr/td[2]/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div[2]/table/tr/td[2]
+------------------Name: #text, Value: 文件大小, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div[2]/table/tr/td[2]/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div[2]/table/tr/td[2]
+------------------Name: a, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div[2]/table/tr/td[2]/a
+--------------------Name: #text, Value: 上载时间, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div[2]/table/tr/td[2]/a/#text
+--------------Name: tr, Value: , Number of child nodes: 6, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/td
+------------------Name: #text, Value: 1, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/td/#text
+----------------Name: #comment, Value: <td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92742&getfilelink=tutorial_409606068.zip&id=859569","859569", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>0. Python Tutorial</a></td>, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/#comment
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/td[3]
+------------------Name: a, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/td[3]/a
+--------------------Name: #text, Value: 0. Python Tutorial, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/td[3]/a/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/td[3]
+------------------Name: #text, Value: Python Tutorial. from http://www-inst.eecs.berkeley.edu/~cs188/fa11/projects/tutorial/tutorial.html, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/td[3]/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/td[3]
+------------------Name: #text, Value: 26.3K, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/td[3]/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/td[3]
+------------------Name: #text, Value: 2012-09-25, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/td[3]/#text
+--------------Name: tr, Value: , Number of child nodes: 6, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/td
+------------------Name: #text, Value: 2, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/td/#text
+----------------Name: #comment, Value: <td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92742&getfilelink=search_823809018.zip&id=859568","859568", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>1. search in PacMan</a></td>, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/#comment
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/td[3]
+------------------Name: a, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/td[3]/a
+--------------------Name: #text, Value: 1. search in PacMan, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/td[3]/a/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/td[3]
+------------------Name: #text, Value: search in PacMan. from http://inst.eecs.berkeley.edu/~cs188/fa11/projects/search/search.html, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/td[3]/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/td[3]
+------------------Name: #text, Value: 141.4K, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/td[3]/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/td[3]
+------------------Name: #text, Value: 2012-09-25, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/td[3]/#text
+--------------Name: tr, Value: , Number of child nodes: 6, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/td
+------------------Name: #text, Value: 3, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/td/#text
+----------------Name: #comment, Value: <td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92742&getfilelink=Guidelines to Project I (2012)_80205223.pptx&id=864760","864760", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>Project 1答疑ppt</a></td>, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/#comment
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/td[3]
+------------------Name: a, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/td[3]/a
+--------------------Name: #text, Value: Project 1答疑ppt, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/td[3]/a/#text
+----------------Name: td, Value: , Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/td[3]
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/td[3]
+------------------Name: #text, Value: 377.9K, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/td[3]/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/td[3]
+------------------Name: #text, Value: 2012-10-09, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/td[3]/#text
+--------------Name: tr, Value: , Number of child nodes: 6, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/td
+------------------Name: #text, Value: 4, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/td/#text
+----------------Name: #comment, Value: <td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92742&getfilelink=multiagent_494203956.zip&id=868999","868999", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>2. Multi-Agent Pacman</a></td>, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/#comment
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/td[3]
+------------------Name: a, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/td[3]/a
+--------------------Name: #text, Value: 2. Multi-Agent Pacman, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/td[3]/a/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/td[3]
+------------------Name: #text, Value: http://inst.eecs.berkeley.edu/~cs188/fa11/projects/multiagent/multiagentProject.html, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/td[3]/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/td[3]
+------------------Name: #text, Value: 98.7K, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/td[3]/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/td[3]
+------------------Name: #text, Value: 2012-10-17, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/td[3]/#text
+--------------Name: tr, Value: , Number of child nodes: 6, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/td
+------------------Name: #text, Value: 5, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/td/#text
+----------------Name: #comment, Value: <td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92742&getfilelink=Guidelines to Project II_862708688.pptx&id=880370","880370", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>Project 2答疑ppt</a></td>, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/#comment
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/td[3]
+------------------Name: a, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/td[3]/a
+--------------------Name: #text, Value: Project 2答疑ppt, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/td[3]/a/#text
+----------------Name: td, Value: , Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/td[3]
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/td[3]
+------------------Name: #text, Value: 255.2K, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/td[3]/#text
+----------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/td[3]
+------------------Name: #text, Value: 2012-11-06, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/div[2]/table/tr[2]/td[3]/#text
+----Name: script, Value: , Number of child nodes: 1, XPath: /html/body/script[2]
+------Name: #text, Value: function check_del(file_id,course_id,category,position,maxPos,filelink){
+  if (confirm("真的要删除这个文件吗？")) {
+   document.location.replace("download_action.jsp?file_id="+escape(file_id)+"&category="+escape(category)+"&position="+escape(position)+"&maxPos="+escape(maxPos)+"&filelink="+filelink+"&course_id="+course_id);   
+  }
+}
+function check_edit(temp)
+{
+   document.location.replace(temp);
+}
+, Number of child nodes: 0, XPath: /html/body/script[2]/#text

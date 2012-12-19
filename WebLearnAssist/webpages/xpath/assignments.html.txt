@@ -1,0 +1,116 @@
+Name: html, Value: , Number of child nodes: 2, XPath: /html
+--Name: head, Value: , Number of child nodes: 5, XPath: /html/head
+----Name: link, Value: , Number of child nodes: 0, XPath: /html/head/link
+----Name: title, Value: , Number of child nodes: 1, XPath: /html/head/title
+------Name: #text, Value: 课程作业, Number of child nodes: 0, XPath: /html/head/title/#text
+----Name: link, Value: , Number of child nodes: 0, XPath: /html/head/link[2]
+----Name: script, Value: , Number of child nodes: 1, XPath: /html/head/script
+------Name: #text, Value: <!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+function check_del(temp)
+{
+        
+  if (confirm("真的要删除吗?")) 
+    document.location.replace(temp);
+}
+//-->
+, Number of child nodes: 0, XPath: /html/head/script/#text
+----Name: link, Value: , Number of child nodes: 0, XPath: /html/head/link[2]
+--Name: body, Value: , Number of child nodes: 1, XPath: /html/body
+----Name: table, Value: , Number of child nodes: 3, XPath: /html/body/table
+------Name: tr, Value: , Number of child nodes: 1, XPath: /html/body/table/tr
+--------Name: td, Value: , Number of child nodes: 2, XPath: /html/body/table/tr/td
+----------Name: img, Value: , Number of child nodes: 0, XPath: /html/body/table/tr/td/img
+----------Name: #text, Value:  人工智能导论, Number of child nodes: 0, XPath: /html/body/table/tr/td/#text
+------Name: tr, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]
+--------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td
+----------Name: input, Value: , Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/input
+------Name: tr, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]
+--------Name: td, Value: , Number of child nodes: 2, XPath: /html/body/table/tr[2]/td
+----------Name: table, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/table
+------------Name: tr, Value: , Number of child nodes: 6, XPath: /html/body/table/tr[2]/td/table/tr
+--------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/table/tr/td
+----------------Name: #text, Value: 作业题目, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/table/tr/td/#text
+--------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/table/tr/td[2]
+----------------Name: #text, Value: 生效日期, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/table/tr/td[2]/#text
+--------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/table/tr/td[2]
+----------------Name: #text, Value: 截止日期, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/table/tr/td[2]/#text
+--------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/table/tr/td[2]
+----------------Name: #text, Value: 提交状态, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/table/tr/td[2]/#text
+--------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/table/tr/td[2]
+----------------Name: #text, Value: 附件大小, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/table/tr/td[2]/#text
+--------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/table/tr/td[2]
+----------------Name: #text, Value: 作业管理, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/table/tr/td[2]/#text
+----------Name: table, Value: , Number of child nodes: 4, XPath: /html/body/table/tr[2]/td/table[2]
+------------Name: tr, Value: , Number of child nodes: 6, XPath: /html/body/table/tr[2]/td/table[2]/tr
+--------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/table[2]/tr/td
+----------------Name: a, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/table[2]/tr/td/a
+------------------Name: #text, Value: homework-1, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/table[2]/tr/td/a/#text
+--------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/table[2]/tr/td[2]
+----------------Name: #text, Value: 2012-09-26, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/table[2]/tr/td[2]/#text
+--------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/table[2]/tr/td[2]
+----------------Name: #text, Value: 2012-10-15, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/table[2]/tr/td[2]/#text
+--------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/table[2]/tr/td[2]
+----------------Name: #text, Value: 已经提交, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/table[2]/tr/td[2]/#text
+--------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/table[2]/tr/td[2]
+----------------Name: #text, Value: 154.4KB, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/table[2]/tr/td[2]/#text
+--------------Name: td, Value: , Number of child nodes: 3, XPath: /html/body/table/tr[2]/td/table[2]/tr/td[2]
+----------------Name: input, Value: , Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/table[2]/tr/td[2]/input
+----------------Name: #text, Value:  , Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/table[2]/tr/td[2]/#text
+----------------Name: input, Value: , Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/table[2]/tr/td[2]/input[3]
+------------Name: tr, Value: , Number of child nodes: 6, XPath: /html/body/table/tr[2]/td/table[2]/tr[3]
+--------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/table[2]/tr[3]/td
+----------------Name: a, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/table[2]/tr[3]/td/a
+------------------Name: #text, Value: homework-2, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/table[2]/tr[3]/td/a/#text
+--------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/table[2]/tr[3]/td[4]
+----------------Name: #text, Value: 2012-10-17, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/table[2]/tr[3]/td[4]/#text
+--------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/table[2]/tr[3]/td[4]
+----------------Name: #text, Value: 2012-11-12, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/table[2]/tr[3]/td[4]/#text
+--------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/table[2]/tr[3]/td[4]
+----------------Name: #text, Value: 已经提交, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/table[2]/tr[3]/td[4]/#text
+--------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/table[2]/tr[3]/td[4]
+----------------Name: #text, Value: 282.9KB, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/table[2]/tr[3]/td[4]/#text
+--------------Name: td, Value: , Number of child nodes: 3, XPath: /html/body/table/tr[2]/td/table[2]/tr[3]/td[4]
+----------------Name: input, Value: , Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/table[2]/tr[3]/td[4]/input
+----------------Name: #text, Value:  , Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/table[2]/tr[3]/td[4]/#text
+----------------Name: input, Value: , Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/table[2]/tr[3]/td[4]/input[5]
+------------Name: tr, Value: , Number of child nodes: 6, XPath: /html/body/table/tr[2]/td/table[2]/tr[3]
+--------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/table[2]/tr[3]/td
+----------------Name: a, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/table[2]/tr[3]/td/a
+------------------Name: #text, Value: Final project, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/table[2]/tr[3]/td/a/#text
+--------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/table[2]/tr[3]/td[4]
+----------------Name: #text, Value: 2012-11-14, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/table[2]/tr[3]/td[4]/#text
+--------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/table[2]/tr[3]/td[4]
+----------------Name: #text, Value: 2013-01-12, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/table[2]/tr[3]/td[4]/#text
+--------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/table[2]/tr[3]/td[4]
+----------------Name: #text, Value: 尚未提交, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/table[2]/tr[3]/td[4]/#text
+--------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/table[2]/tr[3]/td[4]
+----------------Name: #text, Value: 0B, Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/table[2]/tr[3]/td[4]/#text
+--------------Name: td, Value: , Number of child nodes: 3, XPath: /html/body/table/tr[2]/td/table[2]/tr[3]/td[4]
+----------------Name: input, Value: , Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/table[2]/tr[3]/td[4]/input
+----------------Name: #text, Value:  , Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/table[2]/tr[3]/td[4]/#text
+----------------Name: input, Value: , Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/table[2]/tr[3]/td[4]/input[5]
+------------Name: tr, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/table[2]/tr[3]
+--------------Name: td, Value: , Number of child nodes: 1, XPath: /html/body/table/tr[2]/td/table[2]/tr[3]/td
+----------------Name: img, Value: , Number of child nodes: 0, XPath: /html/body/table/tr[2]/td/table[2]/tr[3]/td/img
