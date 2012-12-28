@@ -3,7 +3,7 @@ package cn.edu.tsinghua.weblearn.assist.core;
 import java.util.HashMap;
 /**
  * manage value and key pairs for HtmlFetcher
- * @see HtmlFetcher
+ * @see HtmlAnalyzer
  */
 public class PostData {
 	private HashMap<String, String> dict;

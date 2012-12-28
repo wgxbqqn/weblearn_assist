@@ -140,7 +140,7 @@ public class Utils {
 	/**
 	 * add a new element with text to a root element
 	 * @param doc the document to add the element to
-	 * @param root the root element to append the text node to
+	 * @param parent the parent element to append the text node to
 	 * @param tagName the tag name of newly created element
 	 * @param text the content of the text node
 	 */

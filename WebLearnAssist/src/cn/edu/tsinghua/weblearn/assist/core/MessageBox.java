@@ -52,7 +52,6 @@ public class MessageBox {
 	
 	/**
 	 * get a List object 
-	 * @return
 	 */
 	public List<Message> getList(){
 		return list;

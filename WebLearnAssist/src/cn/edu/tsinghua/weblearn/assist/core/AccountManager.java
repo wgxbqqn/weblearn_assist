@@ -29,7 +29,6 @@ public class AccountManager {
 	}
 	/**
 	 * logout and set status to false
-	 * @return
 	 */
 	public boolean logout(){
 		if(status){
