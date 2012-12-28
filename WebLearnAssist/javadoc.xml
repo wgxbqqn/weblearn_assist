@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="javadoc">
+    <target name="javadoc">
+        <javadoc access="public" additionalparam=" -locale en_US" author="true" classpath="lib/jtidy-r938.jar;lib/commons-codec-1.6.jar;lib/httpcore-4.2.2.jar;lib/httpclient-4.2.2.jar;lib/commons-logging-1.1.1.jar" destdir="doc" doctitle="Web learn assist" nodeprecated="false" nodeprecatedlist="false" noindex="false" nonavbar="false" notree="false" packagenames="cn.edu.tsinghua.weblearn.assist.core,cn.edu.tsinghua.weblearn.assist.modules,cn.edu.tsinghua.weblearn.assist.tools" source="1.7" sourcepath="src" splitindex="true" use="true" version="true"/>
+    </target>
+</project>
