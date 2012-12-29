@@ -1,0 +1,474 @@
+
+
+
+<link href="/css/common.css" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+<title>无标题文档</title>
+<link href="/images/new/WLXT.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/public/ooao_utility.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+//-->
+</script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+
+function MM_showHideLayers() { //v6.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+function NN_showImage1()
+{
+var obj1 = document.getElementById("ImageTab1");
+var obj2 = document.getElementById("ImageTab2");
+obj1.src="/images/new/YQ_1_on.jpg";
+obj2.src="/images/new/YQ_2_no.jpg";
+}
+function NN_showImage2()
+{
+var obj1 = document.getElementById("ImageTab1");
+var obj2 = document.getElementById("ImageTab2");
+obj1.src="/images/new/YQ_1_no.jpg";
+obj2.src="/images/new/YQ_2_on.jpg";
+}
+function NN_showImage(num,k)
+{	
+	for(i=1; i<=num; i+=1)
+	{
+		var obj1 = document.getElementById("ImageTab"+i);
+		if(i!=k){
+			obj1.background="/images/new/Y_bg_no.gif";
+		}
+		else{
+			obj1.background="/images/new/Y_bg_on.gif";
+		}
+			
+	}
+}
+
+//每次用户选中某个category标签就重新设置新增文件的url后面的default_cate的值
+function setDefaultCate(num)
+{
+	var new_url_obj = document.getElementById("new_url");
+	new_url_obj.href = new_url_obj.href.split('&')[0]+"&default_cate="+num+"&course_id=92744";
+}
+
+//-->
+</script>
+<link href="/images/new/xxx.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="MM_preloadImages('/images/new/Users_2.jpg')" scroll="no">
+<table cellpadding="0" cellspacing="0" id="info_1">
+	<tr>
+		<td class="info_title" colspan="2"><img src="/img/info_title.gif" />&nbsp;数据结构
+</td>
+	</tr>
+	<tr>
+		<td class="info_x" colspan="2"></td>
+	</tr> 	
+	<tr>
+	<td height="25"><a id=new_url href="download_new.jsp?up_url=download.jsp&default_cate=1&course_id=92744" onClick="maxSubmit()"></a>
+	</td>
+		<td align="right">
+		<font style="font-size: 12px;" color=red>点击带下划线的列标题，可进行排序</font>
+		</td>
+	</tr>
+  <tr>
+    <td colspan="2" valign="top">
+		<table  width="100%" id="table_box" cellspacing="1" cellpadding="0">
+      <tr height="25" valign="bottom">
+      	<table  width="100%" id="table_box" cellspacing="1" cellpadding="0">
+      		<tr>
+      			<td width="100%">
+      				<table  border="0" cellspacing="0" cellpadding="0">
+      					<tr>
+      						<td>
+      							<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+          						<tr>         						
+          							<input type="hidden" id="urlName" name="urlName" value="download_new.jsp?up_url=download.jsp" />
+	           	
+												<td><img src="/images/new/Y_L.gif" width="4" height="26"></td>
+        								<td class="textTD"  align=center id="ImageTab1" style="cursor:hand" 
+        	
+							        	background="/images/new/Y_bg_on.gif" 
+
+        	height="26"  onClick="setDefaultCate(1);MM_showHideLayers('Layer1','','show')
+
+        	;NN_showImage(1,1)">电子教案</td>
+        								<td><img src="/images/new/Y_R.gif" width="4" height="26"></td>
+        							
+										</tr>
+									  </table>
+								  </td>
+        					<td width="130" valign="middle" align="middle">&nbsp;</td>        
+        			  </tr>
+        			</table>
+   		  		</td>
+        		<td width="115"  valign="top"></td>
+        	</tr>
+        </table>
+      </tr>
+      <tr>
+        <td  colspan="4">
+	        	
+		   <div id="Layer1" style="position:absolute; left:19px; top:88px; width:100%; z-index:1;
+		   	
+		   	">
+		    		<table  id="table_box" cellspacing="1" cellpadding="0">
+               <tr valign="top">
+                  <td width="80" class="title">
+                 	<a href="download.jsp?ordername=position&orderby=2&default_cate=1&course_id=92744">序号</a>
+                 
+                 
+                 
+                 
+                 </td>
+                 <td width="260" class="title">
+                 	<a href="download.jsp?ordername=title&orderby=2&default_cate=1&course_id=92744">标题</a>
+                 
+                 </td>
+                 <td width="300" class="title">简要说明</td>
+                 <td width="80" class="title">文件大小</td>
+                 
+                 <td width="100" class="title">
+                 	
+                 	<a href="download.jsp?ordername=reg_date&orderby=2&default_cate=1&course_id=92744">上载时间</a>
+                 
+               	 </td>
+                 </tr>
+               
+
+										<tr class="tr2">
+   
+
+			                          <td width="80">10</td>
+			                          <!--<td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92744&getfilelink=about_programming_assignments_265704851.7z&id=841324","841324", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>编程作业说明</a></td>-->
+			                          <td width="260" align="center">
+			                          <a target="_top" href="/uploadFile/downloadFile_student.jsp?module_id=322&filePath=2gY27Acpe9xmDfvNhs/UIdfXY6LQUx7yaJl3Lj70bNyzfLPtQIbW36uS3U4Jypjx05P2QUiJdDM%2BiqVyDW6TUvvXUi4TQpebyA28ZqxtIE8%3D&course_id=92744&file_id=841324" >
+			                          编程作业说明
+			                          </a>
+			                          </td>
+			                          <td width="300" align="center"><b><font color=#008080>编程作业具体规范和要求</font><blink><font color=E00000><--重要</font></blink></b></td>
+			                          <td width="80" align="center">4.3K</td>
+			                          <td width="100" align="center">2012-09-12</td>
+			                         </tr>			                        
+									  
+					
+									  <tr class="tr1">
+
+
+			                          <td width="80">15</td>
+			                          <!--<td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92744&getfilelink=example_687905772.zip&id=877781","877781", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>编程作业示例</a></td>-->
+			                          <td width="260" align="center">
+			                          <a target="_top" href="/uploadFile/downloadFile_student.jsp?module_id=322&filePath=WZ9zDAo845wLLdgS2SvO6%2Bi2JKi2Ax703VpWzJJu/uTOhzwN0/6uOZBXBdLtsAEkmfFlfJSQPVc%3D&course_id=92744&file_id=877781" >
+			                          编程作业示例
+			                          </a>
+			                          </td>
+			                          <td width="300" align="center">白盒示例</td>
+			                          <td width="80" align="center">12.4K</td>
+			                          <td width="100" align="center">2012-11-01</td>
+			                         </tr>			                        
+									  
+										<tr class="tr2">
+   
+
+			                          <td width="80">501</td>
+			                          <!--<td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92744&getfilelink=dcs-PA1_701506336.pdf&id=867324","867324", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>计算机系PA1</a></td>-->
+			                          <td width="260" align="center">
+			                          <a target="_top" href="/uploadFile/downloadFile_student.jsp?module_id=322&filePath=RP4cM8LdKcEp6h%2BjQxuGJRdJXVXJ5x80pZRXswfNRM7gyODvuhgTx54E8lTVOwycDPOLac6L5Ps%3D&course_id=92744&file_id=867324" >
+			                          计算机系PA1
+			                          </a>
+			                          </td>
+			                          <td width="300" align="center">供参考</td>
+			                          <td width="80" align="center">529.2K</td>
+			                          <td width="100" align="center">2012-10-14</td>
+			                         </tr>			                        
+									  
+					
+									  <tr class="tr1">
+
+
+			                          <td width="80">502</td>
+			                          <!--<td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92744&getfilelink=dcs-PA2_20080993.pdf&id=867325","867325", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>计算机系PA2</a></td>-->
+			                          <td width="260" align="center">
+			                          <a target="_top" href="/uploadFile/downloadFile_student.jsp?module_id=322&filePath=ihH81DUS1cOVMPsn5OcXaXqTb6mTEspmFDxROFYZCzGIoN5HDE8fG28s3Jpi4B8NzF3JuMVnwdw%3D&course_id=92744&file_id=867325" >
+			                          计算机系PA2
+			                          </a>
+			                          </td>
+			                          <td width="300" align="center">供参考</td>
+			                          <td width="80" align="center">492.1K</td>
+			                          <td width="100" align="center">2012-10-14</td>
+			                         </tr>			                        
+									  
+										<tr class="tr2">
+   
+
+			                          <td width="80">610</td>
+			                          <!--<td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92744&getfilelink=[KP99].The_Practice_of_Programming_87108474.pdf&id=850275","850275", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>【课后阅读】The Practice of Programming</a></td>-->
+			                          <td width="260" align="center">
+			                          <a target="_top" href="/uploadFile/downloadFile_student.jsp?module_id=322&filePath=4EssnDVj4FXnCVAJGarq6yFlfH/5%2B4%2BqRlOEpP4PrwiADkJd/BBnC4qoEZuUHQQ8q1XQlX6DRc9zYG6P2R7V%2BtXZ/vXQFbBzx%2BCnG/cq5K0%3D&course_id=92744&file_id=850275" >
+			                          【课后阅读】The&nbsp;Practice&nbsp;of&nbsp;Programming
+			                          </a>
+			                          </td>
+			                          <td width="300" align="center"><b><font color=#404080>全书：代码风格、算法结构、调试测试</font></b></td>
+			                          <td width="80" align="center">4.64M</td>
+			                          <td width="100" align="center">2012-09-30</td>
+			                         </tr>			                        
+									  
+					
+									  <tr class="tr1">
+
+
+			                          <td width="80">620</td>
+			                          <!--<td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92744&getfilelink=[BM99].Efficient_CPP__Performance_Programming_Techniques_151103081.pdf&id=850278","850278", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>【课后阅读】Efficient C++: Performance Programming Techniques</a></td>-->
+			                          <td width="260" align="center">
+			                          <a target="_top" href="/uploadFile/downloadFile_student.jsp?module_id=322&filePath=fl2gA0w2i1A2MFtVmf%2BZWnRc%2Be8aFUuAPt0TnzuBXaBljTWaSTzPLm0mB0kqfNcmf%2BxKFy0g9PQDwM3kNQi4wU2waE3GZbwMCmlyEywgqnhV%2BbtfZfkbvJqnsYPD96S2pFh2r8M2tLo%3D&course_id=92744&file_id=850278" >
+			                          【课后阅读】Efficient&nbsp;C++:&nbsp;Performance&nbsp;Programming&nbsp;Techniques
+			                          </a>
+			                          </td>
+			                          <td width="300" align="center"><b><font color=#404080>重点阅读13~15章：代码优化</font></b></td>
+			                          <td width="80" align="center">0.98M</td>
+			                          <td width="100" align="center">2012-09-30</td>
+			                         </tr>			                        
+									  
+										<tr class="tr2">
+   
+
+			                          <td width="80">630</td>
+			                          <!--<td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92744&getfilelink=[King08].C_Programming__A_Modern_Approach_53902499.pdf&id=850281","850281", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>【课后阅读】C Programming: A Modern Approach</a></td>-->
+			                          <td width="260" align="center">
+			                          <a target="_top" href="/uploadFile/downloadFile_student.jsp?module_id=322&filePath=GzO1A7xRnZN0y49%2B1W2vbAep%2Bj9ChtjjFyykb6/Z%2BNFwxSS5Pc%2BffCPEUPvAiPog1fqVAA0B17l%2B0TnNXZKp0ADYDh%2BetV4wX%2BFtCWMcs4o%3D&course_id=92744&file_id=850281" >
+			                          【课后阅读】C&nbsp;Programming:&nbsp;A&nbsp;Modern&nbsp;Approach
+			                          </a>
+			                          </td>
+			                          <td width="300" align="center"><b><font color=#404080>重点阅读3、13、14、22章</font></b></td>
+			                          <td width="80" align="center">65.21M</td>
+			                          <td width="100" align="center">2012-09-30</td>
+			                         </tr>			                        
+									  
+					
+									  <tr class="tr1">
+
+
+			                          <td width="80">640</td>
+			                          <!--<td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92744&getfilelink=[Wu04].ch10-dynamic_programming_2871083.pdf&id=853195","853195", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>【课后阅读】动态规划</a></td>-->
+			                          <td width="260" align="center">
+			                          <a target="_top" href="/uploadFile/downloadFile_student.jsp?module_id=322&filePath=Zz2e5VSSY7943U2S232RPSJU8atfj4uh80aML2Y/dCV82G2EgLZmvPYNxbZVfJfcxHwZjhY3A%2BuDMTFXji0divmakuDN1z3e8EP6VL451eU%3D&course_id=92744&file_id=853195" >
+			                          【课后阅读】动态规划
+			                          </a>
+			                          </td>
+			                          <td width="300" align="center"><b><font color=#404080>选自吴文虎老师著《程序设计基础》（第2版）</font></td>
+			                          <td width="80" align="center">522.7K</td>
+			                          <td width="100" align="center">2012-09-30</td>
+			                         </tr>			                        
+									  
+										<tr class="tr2">
+   
+
+			                          <td width="80">800</td>
+			                          <!--<td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92744&getfilelink=dsa@fall2012.print_696707186.7z&id=841325","841325", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>讲义</a></td>-->
+			                          <td width="260" align="center">
+			                          <a target="_top" href="/uploadFile/downloadFile_student.jsp?module_id=322&filePath=rX5vS/it3Kr2eYSCizg95R127euziZAGdpEo5tD7/izbqjOZ2ogHZRFLteq4jlEgjSRILIlqo4w%3D&course_id=92744&file_id=841325" >
+			                          讲义
+			                          </a>
+			                          </td>
+			                          <td width="300" align="center"><b><font color=#008080>打印版</font></b></td>
+			                          <td width="80" align="center">15.82M</td>
+			                          <td width="100" align="center">2012-09-17</td>
+			                         </tr>			                        
+									  
+					
+									  <tr class="tr1">
+
+
+			                          <td width="80">801</td>
+			                          <!--<td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92744&getfilelink=update.121031_687606775.7z&id=877516","877516", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>讲义更新</a></td>-->
+			                          <td width="260" align="center">
+			                          <a target="_top" href="/uploadFile/downloadFile_student.jsp?module_id=322&filePath=daHz//QStmmt%2Bm%2Br6oaq1tu/C35AIEYVu%2BH4YiZAuqHiK0oGwVLRFP%2BZvmQQQr18nIiYekV8uUo%3D&course_id=92744&file_id=877516" >
+			                          讲义更新
+			                          </a>
+			                          </td>
+			                          <td width="300" align="center"><b><font color=#008080>121031</font></b></td>
+			                          <td width="80" align="center">417.2K</td>
+			                          <td width="100" align="center">2012-11-23</td>
+			                         </tr>			                        
+									  
+										<tr class="tr2">
+   
+
+			                          <td width="80">802</td>
+			                          <!--<td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92744&getfilelink=bad_hashing_for_english_strings_158209753.xlsx&id=889434","889434", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>Bad_hashing</a></td>-->
+			                          <td width="260" align="center">
+			                          <a target="_top" href="/uploadFile/downloadFile_student.jsp?module_id=322&filePath=7dSW%2BbKTYDEvyGpLK/qmF/IXwvAmRjCyADgGrDvFB4VurtFHQXW9ZYCY75aUwvysOarfXgb6W/NH/YJmkDIpz/ydEd%2BCVZPrL6r/EIG1tZ0%3D&course_id=92744&file_id=889434" >
+			                          Bad_hashing
+			                          </a>
+			                          </td>
+			                          <td width="300" align="center"><b><font color=#008080>糟糕的英文字符串散列策略</font><blink><font color=E00000><--new</font></blink></b></td>
+			                          <td width="80" align="center">18.2K</td>
+			                          <td width="100" align="center">2012-11-23</td>
+			                         </tr>			                        
+									  
+					
+									  <tr class="tr1">
+
+
+			                          <td width="80">803</td>
+			                          <!--<td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92744&getfilelink=09.Dictionary.X2.Bitmap_576007279.pdf&id=894419","894419", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>Bitmap</a></td>-->
+			                          <td width="260" align="center">
+			                          <a target="_top" href="/uploadFile/downloadFile_student.jsp?module_id=322&filePath=GyFM6UWY3AqJ%2BLyHux2rWXIHkkXibmSwMDOrQkGENsv3G/ygMaGIFc3xPYlnEFmhTnflBPu95XI5Zs2TOpwtfBIkiW4U6ifLYz/WZ2PCpb4%3D&course_id=92744&file_id=894419" >
+			                          Bitmap
+			                          </a>
+			                          </td>
+			                          <td width="300" align="center"><b><font color=#008080>第09章新增讲义</font><blink><font color=E00000><--new</font></blink></b></td>
+			                          <td width="80" align="center">432.5K</td>
+			                          <td width="100" align="center">2012-12-03</td>
+			                         </tr>			                        
+									  
+										<tr class="tr2">
+   
+
+			                          <td width="80">810</td>
+			                          <!--<td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92744&getfilelink=dsa@fall2012.ebook_268706888.7z&id=841326","841326", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>讲义</a></td>-->
+			                          <td width="260" align="center">
+			                          <a target="_top" href="/uploadFile/downloadFile_student.jsp?module_id=322&filePath=rX5vS/it3Kr2eYSCizg95R127euziZAGytahdn3XEQ4Vuapox7EIFeUODdFlolHAF/wt2/bsJrg%3D&course_id=92744&file_id=841326" >
+			                          讲义
+			                          </a>
+			                          </td>
+			                          <td width="300" align="center"><b><font color=#008080>电子书版</font></b></td>
+			                          <td width="80" align="center">45.43M</td>
+			                          <td width="100" align="center">2012-09-17</td>
+			                         </tr>			                        
+									  
+					
+									  <tr class="tr1">
+
+
+			                          <td width="80">820</td>
+			                          <!--<td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92744&getfilelink=src_590402547.7z&id=841329","841329", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>示例代码</a></td>-->
+			                          <td width="260" align="center">
+			                          <a target="_top" href="/uploadFile/downloadFile_student.jsp?module_id=322&filePath=KNHx8BuQBGewKlr3T9GbPjFA179EBm2Ej1i/rCAVH/4je9Mxx7/sftYPEitQjyNi6oamRVe1y2Y%3D&course_id=92744&file_id=841329" >
+			                          示例代码
+			                          </a>
+			                          </td>
+			                          <td width="300" align="center"><b><font color=#008080>VS2008格式，可在课后反复调试</font></b></td>
+			                          <td width="80" align="center">294.0K</td>
+			                          <td width="100" align="center">2012-10-08</td>
+			                         </tr>			                        
+									  
+										<tr class="tr2">
+   
+
+			                          <td width="80">910</td>
+			                          <!--<td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92744&getfilelink=PA0_hints_976304857.7z&id=841330","841330", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>PA0提示</a></td>-->
+			                          <td width="260" align="center">
+			                          <a target="_top" href="/uploadFile/downloadFile_student.jsp?module_id=322&filePath=D%2BhM3Owi7dfu8cyFG4iMZDyNMnUkdHWIlGh0YF6gU47Pwm8tFNhPyqwf%2BiqVbk7druFnxAReQXg%3D&course_id=92744&file_id=841330" >
+			                          PA0提示
+			                          </a>
+			                          </td>
+			                          <td width="300" align="center"><b><font color=#008080>编程作业0解法提示</font></b></td>
+			                          <td width="80" align="center">15.2K</td>
+			                          <td width="100" align="center">2012-09-15</td>
+			                         </tr>			                        
+									  
+					
+									  <tr class="tr1">
+
+
+			                          <td width="80">990</td>
+			                          <!--<td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92744&getfilelink=longest_317903360.7z&id=841333","841333", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>Longest Time/Path</a></td>-->
+			                          <td width="260" align="center">
+			                          <a target="_top" href="/uploadFile/downloadFile_student.jsp?module_id=322&filePath=EB09svJbc8Vs0ciibh7/07/QbHqm8XeYO/b14Q5bMbKvtHZvPJ6B7GAvGGV9nqLjxE3O5pD/J0M%3D&course_id=92744&file_id=841333" >
+			                          Longest&nbsp;Time/Path
+			                          </a>
+			                          </td>
+			                          <td width="300" align="center"></td>
+			                          <td width="80" align="center">5.09M</td>
+			                          <td width="100" align="center">2012-09-17</td>
+			                         </tr>			                        
+									  
+										<tr class="tr2">
+   
+
+			                          <td width="80">999</td>
+			                          <!--<td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92744&getfilelink=tailored_program_application_81610480.doc&id=846277","846277", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>因材施教申请表</a></td>-->
+			                          <td width="260" align="center">
+			                          <a target="_top" href="/uploadFile/downloadFile_student.jsp?module_id=322&filePath=GTPKUT26iyNakCIh1CshChsspcWIVaejMKYWOnZTrqN54qdWTeKR%2BmOGdThzt30Bci%2BRtu5mdfCTntDiQNL40MSTp1S4m1%2B3Gf92gbz2dkw%3D&course_id=92744&file_id=846277" >
+			                          因材施教申请表
+			                          </a>
+			                          </td>
+			                          <td width="300" align="center"><b><font color=#008080>9月20日前在答疑区提交</color></b></td>
+			                          <td width="80" align="center">29.5K</td>
+			                          <td width="100" align="center">2012-09-22</td>
+			                         </tr>			                        
+									  						
+			              
+			         
+        </table>
+		   </div>
+		   
+		   
+	    </td>
+      </tr>
+    </table>	
+    </td>
+  </tr>
+</table>
+</body>
+</html>
+<SCRIPT>
+function check_del(file_id,course_id,category,position,maxPos,filelink){
+  if (confirm("真的要删除这个文件吗？")) {
+   document.location.replace("download_action.jsp?file_id="+escape(file_id)+"&category="+escape(category)+"&position="+escape(position)+"&maxPos="+escape(maxPos)+"&filelink="+filelink+"&course_id="+course_id);   
+  }
+}
+function check_edit(temp)
+{
+   document.location.replace(temp);
+}
+</SCRIPT>

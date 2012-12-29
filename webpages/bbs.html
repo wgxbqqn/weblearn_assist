@@ -1,0 +1,430 @@
+<!--è¯¾ç¨è®¨è®º-->
+
+
+
+<link href="/css/common.css" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+<title>无标题文档</title>
+<link href="/images/new/WLXT.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+//-->
+</script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+
+function MM_showHideLayers() { //v6.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+function NN_showImage1()
+{
+var obj1 = document.getElementById("ImageTab1");
+var obj2 = document.getElementById("ImageTab2");
+obj1.src="/images/new/SYQ_3_on.jpg";
+obj2.src="/images/new/SYQ_5_no.jpg";
+}
+function NN_showImage2()
+{
+var obj1 = document.getElementById("ImageTab1");
+var obj2 = document.getElementById("ImageTab2");
+obj1.src="/images/new/SYQ_3_no.jpg";
+obj2.src="/images/new/SYQ_5_on.jpg";
+}
+
+function NN_showImage(num,k)
+{	
+	for(i=1; i<=num; i+=1)
+	{
+		var obj1 = document.getElementById("ImageTab"+i);
+		if(i!=k){
+			obj1.background="/images/new/Y_bg_no.gif";
+		}
+		else{
+			obj1.background="/images/new/Y_bg_on.gif";
+		}
+			
+	}
+}
+
+//每次用户选中某个category标签就重新设置新增文件的url后面的default_cate的值
+function setDefaultCate(num)
+{
+	var new_url_obj = document.getElementById("new_url");
+	//new_url_obj.href = new_url_obj.href.split('&')[0]+"&default_cate_id="+num;
+	new_url_obj.href = new_url_obj.href.substring(0,(new_url_obj.href.lastIndexOf('&')))+"&default_cate_id="+num;
+}
+
+function check_del(temp)
+{
+  if (confirm("真的要删除吗?")) 
+  {
+  	var new_url_obj = document.getElementById("new_url");
+  	var num = new_url_obj.href.substring((new_url_obj.href.lastIndexOf('='))+1,(new_url_obj.href.lastIndexOf('='))+2);
+    document.location.replace(temp+"&default_cate_id="+num);
+  }
+}
+
+//-->
+</script>
+<link href="/images/new/xxx.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="MM_preloadImages('/images/new/Users_2.jpg')" scroll="no"> 
+
+<table cellpadding="0" cellspacing="0" id="info_1">
+<tr>
+  <td colspan="2" class="info_title"><img src="/img/info_title.gif" />&nbsp;人工智能导论
+</td>
+</tr>
+<tr>
+  <td>
+			
+    	<a id=new_url href="talk_submit.jsp?up_url=talk_list_student.jsp&bbs_id=8061546&course_id=92742&default_cate_id=1" ><input name="buttonPub" type="button" style="cursor:hand" id="buttonPub" value="发表话题" onclick="javascript:location.href='talk_submit.jsp?up_url=talk_list_student.jsp&bbs_id=8061546&course_id=92742&default_cate_id=1'"/></a>
+			  
+  </td>
+  <td width="15%" valign="top" align="right" style="cursor:hand">
+  	<img src="/MultiLanguage/images/new/AN_10.jpg" width="58" height="24" align="top" onclick="javascript:window.location.reload(true)" alt="">
+  </td>
+</tr>	
+<tr>
+  <td class="info_x" colspan="2"></td>
+</tr>  	     				
+<tr>
+  <td valign="top" colspan="2">
+	<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+      <tr height="25" valign="bottom">
+      	<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+      		<tr>
+      			<td height="25" width="100%">
+      				<table  border="0" cellspacing="0" cellpadding="0">
+      					<tr>
+      						<td>
+      							<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+          						<tr>          						
+          							
+	           	
+												<td><img src="/images/new/Y_L.gif" width="4" height="26"></td>
+        								<td class="textTD" valign=baseline align=center id="ImageTab1" style="cursor:hand" 
+        	
+        	background="/images/new/Y_bg_on.gif" 
+
+        	height="26"  onClick="setDefaultCate(1);MM_showHideLayers('Layer1','','show')
+
+        	;NN_showImage(1,1)">一般讨论区</td>
+        								<td><img src="/images/new/Y_R.gif" width="4" height="26"></td>
+        							
+										  </tr>
+										</table>
+									</td>
+        			  </tr>
+        			</table>
+        		</td>
+        	</tr>
+        </table>
+      </tr>
+      
+      <tr >
+        <td colspan="2">
+	        	
+		   <div id="Layer1" style="position:absolute; left:20px; top:89px; width:100%;  z-index:1;
+		   	
+		   	">        	
+				     <table id="table_box" width="100%" cellspacing="1" cellpadding="0">
+		               <tr>
+		                 <td width="48.5%" height="30" class='title'>讨论主题</td>
+		                 <td width="15%" class='title'>作者</td>
+		                 <td width="15%" class='title'>回复/点击</td>
+		                 <td width="21.5%" class='title'>发表时间</td>
+		               </tr>
+								   <tr>
+					            <td colspan="4">
+											    <table id="table_box" width="100%" cellspacing="1" cellpadding="0">
+
+															<tr class="tr2">
+   
+							                     <td width="50%" height="25" align="left"><a href='talk_reply_student.jsp?bbs_id=8061546&course_id=92742&id=1360516&rep_num=0&up_url=talk_list_student.jsp&default_cate_id=1'>Bayesian&nbsp;Networks（complete）的pdf下不了……</a></td>
+							                     <td width="15%" align="left">孙硕</td>
+							                     <td width="15%">0/2</td>
+							                     <td width="20%">2012-11-14 23:02</td>							                     
+							                 </tr>
+							     
+					
+					  									<tr class="tr1">
+					 
+							                     <td width="50%" height="25" align="left"><a href='talk_reply_student.jsp?bbs_id=8061546&course_id=92742&id=1359764&rep_num=0&up_url=talk_list_student.jsp&default_cate_id=1'>Final&nbsp;Project---Web&nbsp;Classification组队</a></td>
+							                     <td width="15%" align="left">郑伟业</td>
+							                     <td width="15%">0/15</td>
+							                     <td width="20%">2012-11-13 21:36</td>							                     
+							                 </tr>
+							     
+															<tr class="tr2">
+   
+							                     <td width="50%" height="25" align="left"><a href='talk_reply_student.jsp?bbs_id=8061546&course_id=92742&id=1357610&rep_num=1&up_url=talk_list_student.jsp&default_cate_id=1'>关于a-b剪枝问题</a></td>
+							                     <td width="15%" align="left">李仁杰</td>
+							                     <td width="15%">1/40</td>
+							                     <td width="20%">2012-11-09 19:17</td>							                     
+							                 </tr>
+							     
+					
+					  									<tr class="tr1">
+					 
+							                     <td width="50%" height="25" align="left"><a href='talk_reply_student.jsp?bbs_id=8061546&course_id=92742&id=1357302&rep_num=4&up_url=talk_list_student.jsp&default_cate_id=1'>Q4随机鬼不能半胜，求助！</a></td>
+							                     <td width="15%" align="left">黄强强</td>
+							                     <td width="15%">4/50</td>
+							                     <td width="20%">2012-11-09 09:42</td>							                     
+							                 </tr>
+							     
+															<tr class="tr2">
+   
+							                     <td width="50%" height="25" align="left"><a href='talk_reply_student.jsp?bbs_id=8061546&course_id=92742&id=1354890&rep_num=0&up_url=talk_list_student.jsp&default_cate_id=1'>求问题1好的评估函数啊~</a></td>
+							                     <td width="15%" align="left">李仁杰</td>
+							                     <td width="15%">0/32</td>
+							                     <td width="20%">2012-11-05 13:18</td>							                     
+							                 </tr>
+							     
+					
+					  									<tr class="tr1">
+					 
+							                     <td width="50%" height="25" align="left"><a href='talk_reply_student.jsp?bbs_id=8061546&course_id=92742&id=1353923&rep_num=2&up_url=talk_list_student.jsp&default_cate_id=1'>ReflexAgent评分问题</a></td>
+							                     <td width="15%" align="left">马逸东</td>
+							                     <td width="15%">2/59</td>
+							                     <td width="20%">2012-11-03 16:34</td>							                     
+							                 </tr>
+							     
+															<tr class="tr2">
+   
+							                     <td width="50%" height="25" align="left"><a href='talk_reply_student.jsp?bbs_id=8061546&course_id=92742&id=1353404&rep_num=2&up_url=talk_list_student.jsp&default_cate_id=1'>Uncertainty课件的问题</a></td>
+							                     <td width="15%" align="left">郑伟业</td>
+							                     <td width="15%">2/58</td>
+							                     <td width="20%">2012-11-02 22:48</td>							                     
+							                 </tr>
+							     
+					
+					  									<tr class="tr1">
+					 
+							                     <td width="50%" height="25" align="left"><a href='talk_reply_student.jsp?bbs_id=8061546&course_id=92742&id=1350689&rep_num=3&up_url=talk_list_student.jsp&default_cate_id=1'>project&nbsp;2的评估问题</a></td>
+							                     <td width="15%" align="left">廖方舟</td>
+							                     <td width="15%">3/69</td>
+							                     <td width="20%">2012-10-29 16:48</td>							                     
+							                 </tr>
+							     
+															<tr class="tr2">
+   
+							                     <td width="50%" height="25" align="left"><a href='talk_reply_student.jsp?bbs_id=8061546&course_id=92742&id=1342965&rep_num=4&up_url=talk_list_student.jsp&default_cate_id=1'>一些经验（解决如bfs很慢、展开节点数很高等）</a></td>
+							                     <td width="15%" align="left">杨海宇</td>
+							                     <td width="15%">4/70</td>
+							                     <td width="20%">2012-10-15 20:31</td>							                     
+							                 </tr>
+							     
+					
+					  									<tr class="tr1">
+					 
+							                     <td width="50%" height="25" align="left"><a href='talk_reply_student.jsp?bbs_id=8061546&course_id=92742&id=1342920&rep_num=3&up_url=talk_list_student.jsp&default_cate_id=1'>python如何传值而不传引用</a></td>
+							                     <td width="15%" align="left">李仁杰</td>
+							                     <td width="15%">3/43</td>
+							                     <td width="20%">2012-10-15 19:44</td>							                     
+							                 </tr>
+							     
+															<tr class="tr2">
+   
+							                     <td width="50%" height="25" align="left"><a href='talk_reply_student.jsp?bbs_id=8061546&course_id=92742&id=1342333&rep_num=2&up_url=talk_list_student.jsp&default_cate_id=1'>最后的report怎么写啊？</a></td>
+							                     <td width="15%" align="left">陈智威</td>
+							                     <td width="15%">2/65</td>
+							                     <td width="20%">2012-10-14 22:27</td>							                     
+							                 </tr>
+							     
+					
+					  									<tr class="tr1">
+					 
+							                     <td width="50%" height="25" align="left"><a href='talk_reply_student.jsp?bbs_id=8061546&course_id=92742&id=1342194&rep_num=9&up_url=talk_list_student.jsp&default_cate_id=1'>关于第五题</a></td>
+							                     <td width="15%" align="left">李仁杰</td>
+							                     <td width="15%">9/100</td>
+							                     <td width="20%">2012-10-14 17:30</td>							                     
+							                 </tr>
+							     
+															<tr class="tr2">
+   
+							                     <td width="50%" height="25" align="left"><a href='talk_reply_student.jsp?bbs_id=8061546&course_id=92742&id=1342087&rep_num=1&up_url=talk_list_student.jsp&default_cate_id=1'>A*算法某些情况提示Illegal&nbsp;action正常吗</a></td>
+							                     <td width="15%" align="left">杨海宇</td>
+							                     <td width="15%">1/32</td>
+							                     <td width="20%">2012-10-14 14:17</td>							                     
+							                 </tr>
+							     
+					
+					  									<tr class="tr1">
+					 
+							                     <td width="50%" height="25" align="left"><a href='talk_reply_student.jsp?bbs_id=8061546&course_id=92742&id=1341850&rep_num=3&up_url=talk_list_student.jsp&default_cate_id=1'>搜索方式是否要严格按要求来？</a></td>
+							                     <td width="15%" align="left">黄强强</td>
+							                     <td width="15%">3/65</td>
+							                     <td width="20%">2012-10-13 21:04</td>							                     
+							                 </tr>
+							     
+															<tr class="tr2">
+   
+							                     <td width="50%" height="25" align="left"><a href='talk_reply_student.jsp?bbs_id=8061546&course_id=92742&id=1341587&rep_num=4&up_url=talk_list_student.jsp&default_cate_id=1'>找不到好的Heuristic啊。。。</a></td>
+							                     <td width="15%" align="left">陈智威</td>
+							                     <td width="15%">4/69</td>
+							                     <td width="20%">2012-10-13 10:49</td>							                     
+							                 </tr>
+							     
+					
+					  									<tr class="tr1">
+					 
+							                     <td width="50%" height="25" align="left"><a href='talk_reply_student.jsp?bbs_id=8061546&course_id=92742&id=1341274&rep_num=4&up_url=talk_list_student.jsp&default_cate_id=1'>地图选择</a></td>
+							                     <td width="15%" align="left">武辉</td>
+							                     <td width="15%">4/67</td>
+							                     <td width="20%">2012-10-12 15:58</td>							                     
+							                 </tr>
+							     
+															<tr class="tr2">
+   
+							                     <td width="50%" height="25" align="left"><a href='talk_reply_student.jsp?bbs_id=8061546&course_id=92742&id=1341035&rep_num=1&up_url=talk_list_student.jsp&default_cate_id=1'>作业的Bonus部分一定要写吗？</a></td>
+							                     <td width="15%" align="left">王一帆</td>
+							                     <td width="15%">1/64</td>
+							                     <td width="20%">2012-10-12 01:16</td>							                     
+							                 </tr>
+							     
+					
+					  									<tr class="tr1">
+					 
+							                     <td width="50%" height="25" align="left"><a href='talk_reply_student.jsp?bbs_id=8061546&course_id=92742&id=1340740&rep_num=1&up_url=talk_list_student.jsp&default_cate_id=1'>忍不住吐槽了</a></td>
+							                     <td width="15%" align="left">李仁杰</td>
+							                     <td width="15%">1/67</td>
+							                     <td width="20%">2012-10-11 14:53</td>							                     
+							                 </tr>
+							     
+															<tr class="tr2">
+   
+							                     <td width="50%" height="25" align="left"><a href='talk_reply_student.jsp?bbs_id=8061546&course_id=92742&id=1340498&rep_num=1&up_url=talk_list_student.jsp&default_cate_id=1'>A*搜索使用的结构体</a></td>
+							                     <td width="15%" align="left">武辉</td>
+							                     <td width="15%">1/40</td>
+							                     <td width="20%">2012-10-11 02:13</td>							                     
+							                 </tr>
+							     
+					
+					  									<tr class="tr1">
+					 
+							                     <td width="50%" height="25" align="left"><a href='talk_reply_student.jsp?bbs_id=8061546&course_id=92742&id=1339726&rep_num=3&up_url=talk_list_student.jsp&default_cate_id=1'>UCS&nbsp;on&nbsp;graph&nbsp;的问题</a></td>
+							                     <td width="15%" align="left">杨海宇</td>
+							                     <td width="15%">3/69</td>
+							                     <td width="20%">2012-10-09 23:32</td>							                     
+							                 </tr>
+							     
+															<tr class="tr2">
+   
+							                     <td width="50%" height="25" align="left"><a href='talk_reply_student.jsp?bbs_id=8061546&course_id=92742&id=1338933&rep_num=1&up_url=talk_list_student.jsp&default_cate_id=1'>在eclipse里怎么加载不同的layout？</a></td>
+							                     <td width="15%" align="left">李仁杰</td>
+							                     <td width="15%">1/45</td>
+							                     <td width="20%">2012-10-08 22:39</td>							                     
+							                 </tr>
+							     
+					
+					  									<tr class="tr1">
+					 
+							                     <td width="50%" height="25" align="left"><a href='talk_reply_student.jsp?bbs_id=8061546&course_id=92742&id=1338823&rep_num=1&up_url=talk_list_student.jsp&default_cate_id=1'>为什么运行程序就会报错？</a></td>
+							                     <td width="15%" align="left">解光耀</td>
+							                     <td width="15%">1/59</td>
+							                     <td width="20%">2012-10-08 20:40</td>							                     
+							                 </tr>
+							     
+															<tr class="tr2">
+   
+							                     <td width="50%" height="25" align="left"><a href='talk_reply_student.jsp?bbs_id=8061546&course_id=92742&id=1338177&rep_num=2&up_url=talk_list_student.jsp&default_cate_id=1'>定义class&nbsp;Node遇到的语法问题</a></td>
+							                     <td width="15%" align="left">马逸东</td>
+							                     <td width="15%">2/71</td>
+							                     <td width="20%">2012-10-07 21:54</td>							                     
+							                 </tr>
+							     
+					
+					  									<tr class="tr1">
+					 
+							                     <td width="50%" height="25" align="left"><a href='talk_reply_student.jsp?bbs_id=8061546&course_id=92742&id=1338123&rep_num=2&up_url=talk_list_student.jsp&default_cate_id=1'>作业是用python2还是python3？</a></td>
+							                     <td width="15%" align="left">李仁杰</td>
+							                     <td width="15%">2/69</td>
+							                     <td width="20%">2012-10-07 20:32</td>							                     
+							                 </tr>
+							     
+															<tr class="tr2">
+   
+							                     <td width="50%" height="25" align="left"><a href='talk_reply_student.jsp?bbs_id=8061546&course_id=92742&id=1337221&rep_num=1&up_url=talk_list_student.jsp&default_cate_id=1'>请问如何验证我的heuristic&nbsp;function是正确的？</a></td>
+							                     <td width="15%" align="left">廖方舟</td>
+							                     <td width="15%">1/77</td>
+							                     <td width="20%">2012-10-04 18:45</td>							                     
+							                 </tr>
+							     
+					
+					  									<tr class="tr1">
+					 
+							                     <td width="50%" height="25" align="left"><a href='talk_reply_student.jsp?bbs_id=8061546&course_id=92742&id=1337201&rep_num=7&up_url=talk_list_student.jsp&default_cate_id=1'>求助助教，请问能提供一些示例么</a></td>
+							                     <td width="15%" align="left">孙皓</td>
+							                     <td width="15%">7/161</td>
+							                     <td width="20%">2012-10-04 16:22</td>							                     
+							                 </tr>
+							     
+															<tr class="tr2">
+   
+							                     <td width="50%" height="25" align="left"><a href='talk_reply_student.jsp?bbs_id=8061546&course_id=92742&id=1337011&rep_num=5&up_url=talk_list_student.jsp&default_cate_id=1'>不会用python啊</a></td>
+							                     <td width="15%" align="left">廖方舟</td>
+							                     <td width="15%">5/169</td>
+							                     <td width="20%">2012-10-03 11:12</td>							                     
+							                 </tr>
+							     	  
+							              </table>
+									 		</td>
+					         </tr>
+		             </table>
+				   </div>
+		            
+		    </td>
+      </tr>
+    </table>	
+    </td>
+  </tr>
+</table>
+</body>
+</html>

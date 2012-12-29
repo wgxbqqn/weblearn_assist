@@ -1,0 +1,586 @@
+
+
+
+<link href="/css/common.css" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+<title>无标题文档</title>
+<link href="/images/new/WLXT.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/public/ooao_utility.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+//-->
+</script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+
+function MM_showHideLayers() { //v6.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+function NN_showImage1()
+{
+var obj1 = document.getElementById("ImageTab1");
+var obj2 = document.getElementById("ImageTab2");
+obj1.src="/images/new/YQ_1_on.jpg";
+obj2.src="/images/new/YQ_2_no.jpg";
+}
+function NN_showImage2()
+{
+var obj1 = document.getElementById("ImageTab1");
+var obj2 = document.getElementById("ImageTab2");
+obj1.src="/images/new/YQ_1_no.jpg";
+obj2.src="/images/new/YQ_2_on.jpg";
+}
+function NN_showImage(num,k)
+{	
+	for(i=1; i<=num; i+=1)
+	{
+		var obj1 = document.getElementById("ImageTab"+i);
+		if(i!=k){
+			obj1.background="/images/new/Y_bg_no.gif";
+		}
+		else{
+			obj1.background="/images/new/Y_bg_on.gif";
+		}
+			
+	}
+}
+
+//每次用户选中某个category标签就重新设置新增文件的url后面的default_cate的值
+function setDefaultCate(num)
+{
+	var new_url_obj = document.getElementById("new_url");
+	new_url_obj.href = new_url_obj.href.split('&')[0]+"&default_cate="+num+"&course_id=92742";
+}
+
+//-->
+</script>
+<link href="/images/new/xxx.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="MM_preloadImages('/images/new/Users_2.jpg')" scroll="no">
+<table cellpadding="0" cellspacing="0" id="info_1">
+	<tr>
+		<td class="info_title" colspan="2"><img src="/img/info_title.gif" />&nbsp;人工智能导论
+</td>
+	</tr>
+	<tr>
+		<td class="info_x" colspan="2"></td>
+	</tr> 	
+	<tr>
+	<td height="25"><a id=new_url href="download_new.jsp?up_url=download.jsp&default_cate=1&course_id=92742" onClick="maxSubmit()"></a>
+	</td>
+		<td align="right">
+		<font style="font-size: 12px;" color=red>点击带下划线的列标题，可进行排序</font>
+		</td>
+	</tr>
+  <tr>
+    <td colspan="2" valign="top">
+		<table  width="100%" id="table_box" cellspacing="1" cellpadding="0">
+      <tr height="25" valign="bottom">
+      	<table  width="100%" id="table_box" cellspacing="1" cellpadding="0">
+      		<tr>
+      			<td width="100%">
+      				<table  border="0" cellspacing="0" cellpadding="0">
+      					<tr>
+      						<td>
+      							<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+          						<tr>         						
+          							<input type="hidden" id="urlName" name="urlName" value="download_new.jsp?up_url=download.jsp" />
+	           	
+												<td><img src="/images/new/Y_L.gif" width="4" height="26"></td>
+        								<td class="textTD"  align=center id="ImageTab1" style="cursor:hand" 
+        	
+							        	background="/images/new/Y_bg_on.gif" 
+
+        	height="26"  onClick="setDefaultCate(1);MM_showHideLayers('Layer1','','show')
+
+					    			;MM_showHideLayers('Layer2','','hide')
+					    		
+        	;NN_showImage(2,1)">电子教案</td>
+        								<td><img src="/images/new/Y_R.gif" width="4" height="26"></td>
+	           	
+												<td><img src="/images/new/Y_L.gif" width="4" height="26"></td>
+        								<td class="textTD"  align=center id="ImageTab2" style="cursor:hand" 
+        	
+												background="/images/new/Y_bg_no.gif" 
+
+        	height="26"  onClick="setDefaultCate(2);MM_showHideLayers('Layer2','','show')
+
+					    			;MM_showHideLayers('Layer1','','hide')
+					    		
+        	;NN_showImage(2,2)">作业相关</td>
+        								<td><img src="/images/new/Y_R.gif" width="4" height="26"></td>
+        							
+										</tr>
+									  </table>
+								  </td>
+        					<td width="130" valign="middle" align="middle">&nbsp;</td>        
+        			  </tr>
+        			</table>
+   		  		</td>
+        		<td width="115"  valign="top"></td>
+        	</tr>
+        </table>
+      </tr>
+      <tr>
+        <td  colspan="4">
+	        	
+		   <div id="Layer1" style="position:absolute; left:19px; top:88px; width:100%; z-index:1;
+		   	
+		   	">
+		    		<table  id="table_box" cellspacing="1" cellpadding="0">
+               <tr valign="top">
+                  <td width="80" class="title">
+                 	<a href="download.jsp?ordername=position&orderby=2&default_cate=1&course_id=92742">序号</a>
+                 
+                 
+                 
+                 
+                 </td>
+                 <td width="260" class="title">
+                 	<a href="download.jsp?ordername=title&orderby=2&default_cate=1&course_id=92742">标题</a>
+                 
+                 </td>
+                 <td width="300" class="title">简要说明</td>
+                 <td width="80" class="title">文件大小</td>
+                 
+                 <td width="100" class="title">
+                 	
+                 	<a href="download.jsp?ordername=reg_date&orderby=2&default_cate=1&course_id=92742">上载时间</a>
+                 
+               	 </td>
+                 </tr>
+               
+
+										<tr class="tr2">
+   
+
+			                          <td width="80">1</td>
+			                          <!--<td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92742&getfilelink=course_info_965407967.pdf&id=849384","849384", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>0. course information</a></td>-->
+			                          <td width="260" align="center">
+			                          <a target="_top" href="/uploadFile/downloadFile_student.jsp?module_id=322&filePath=ZYOkl8YIQyvNoryq73PNvwMqKr56crEyZOabTO2oqa69QIWBGYzH/7A653Y9zb2R%2BuYPpR4SCp8%3D&course_id=92742&file_id=849384" >
+			                          0.&nbsp;course&nbsp;information
+			                          </a>
+			                          </td>
+			                          <td width="300" align="center">课程信息</td>
+			                          <td width="80" align="center">677.1K</td>
+			                          <td width="100" align="center">2012-09-12</td>
+			                         </tr>			                        
+									  
+					
+									  <tr class="tr1">
+
+
+			                          <td width="80">2</td>
+			                          <!--<td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92742&getfilelink=introduction-part-20120911_722503859.pdf&id=849392","849392", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>1. introduction</a></td>-->
+			                          <td width="260" align="center">
+			                          <a target="_top" href="/uploadFile/downloadFile_student.jsp?module_id=322&filePath=vnpBleTHGKnYMPghCjAZGs5tvM/XXR18K5zXD6tGg6a7vzjmRquDNNGEp3xfT6UQODcWTm1lwQOrrMTTIUEspC5ZnYMBgIX4g43w7jcJA8o%3D&course_id=92742&file_id=849392" >
+			                          1.&nbsp;introduction
+			                          </a>
+			                          </td>
+			                          <td width="300" align="center">what is AI,
+history of AI,
+the state of the art,
+to be continued</td>
+			                          <td width="80" align="center">3.48M</td>
+			                          <td width="100" align="center">2012-09-12</td>
+			                         </tr>			                        
+									  
+										<tr class="tr2">
+   
+
+			                          <td width="80">3</td>
+			                          <!--<td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92742&getfilelink=introduction_164807577.pdf&id=855110","855110", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>1. introduction (completed version)</a></td>-->
+			                          <td width="260" align="center">
+			                          <a target="_top" href="/uploadFile/downloadFile_student.jsp?module_id=322&filePath=vnpBleTHGKnYMPghCjAZGs5tvM/XXR18zX1o0Pgy2tjGgZ00ZTmGxs1f8FmpoGyZneta7zCshWI%3D&course_id=92742&file_id=855110" >
+			                          1.&nbsp;introduction&nbsp;(completed&nbsp;version)
+			                          </a>
+			                          </td>
+			                          <td width="300" align="center">what is AI, history of AI, the state of the art</td>
+			                          <td width="80" align="center">6.69M</td>
+			                          <td width="100" align="center">2012-09-18</td>
+			                         </tr>			                        
+									  
+					
+									  <tr class="tr1">
+
+
+			                          <td width="80">4</td>
+			                          <!--<td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92742&getfilelink=uninformed_search-part-20120918_52050206.pdf&id=855112","855112", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>2. uninformed search</a></td>-->
+			                          <td width="260" align="center">
+			                          <a target="_top" href="/uploadFile/downloadFile_student.jsp?module_id=322&filePath=RvbEQjC3nutseJod1lF5x5cg3ToUWJPEKACDP%2Buj1mn4Rj0rl2ZXABD9Q2gewnEV9xwK/tecoA6524cdt3wPVbO630B0M2f2v78G/G3STRo%3D&course_id=92742&file_id=855112" >
+			                          2.&nbsp;uninformed&nbsp;search
+			                          </a>
+			                          </td>
+			                          <td width="300" align="center">problem-solving agents, problem formulation, tree search algorithms, to be continued</td>
+			                          <td width="80" align="center">759.9K</td>
+			                          <td width="100" align="center">2012-09-18</td>
+			                         </tr>			                        
+									  
+										<tr class="tr2">
+   
+
+			                          <td width="80">5</td>
+			                          <!--<td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92742&getfilelink=uninformed_search_369408446.pdf&id=859565","859565", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>2. uninformed search (complete</a></td>-->
+			                          <td width="260" align="center">
+			                          <a target="_top" href="/uploadFile/downloadFile_student.jsp?module_id=322&filePath=RvbEQjC3nutseJod1lF5x5cg3ToUWJPECaGBj12F2QVJVzEviUGCW4QMNZW0RzMpA0YR5Xw%2BCi0%3D&course_id=92742&file_id=859565" >
+			                          2.&nbsp;uninformed&nbsp;search&nbsp;(complete
+			                          </a>
+			                          </td>
+			                          <td width="300" align="center">problem-solving agents, problem formulation, tree search algorithms, bfs, ucs, dfs, l-dfs, ids</td>
+			                          <td width="80" align="center">1.45M</td>
+			                          <td width="100" align="center">2012-09-25</td>
+			                         </tr>			                        
+									  
+					
+									  <tr class="tr1">
+
+
+			                          <td width="80">6</td>
+			                          <!--<td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92742&getfilelink=informed_search_449208809.pdf&id=859567","859567", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>3. informed search</a></td>-->
+			                          <td width="260" align="center">
+			                          <a target="_top" href="/uploadFile/downloadFile_student.jsp?module_id=322&filePath=x51PKCra%2BaCNRzYPniYgYeQgNqF8%2BjYmDPWRaoNQeqr7GM4kTEECcxQPFUEmSzOlh1WKyPLq5M0%3D&course_id=92742&file_id=859567" >
+			                          3.&nbsp;informed&nbsp;search
+			                          </a>
+			                          </td>
+			                          <td width="300" align="center">greedy best-first, A*, heuristic</td>
+			                          <td width="80" align="center">669.5K</td>
+			                          <td width="100" align="center">2012-09-25</td>
+			                         </tr>			                        
+									  
+										<tr class="tr2">
+   
+
+			                          <td width="80">7</td>
+			                          <!--<td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92742&getfilelink=beyond_classical_search-part-20121009_504105934.pdf&id=864720","864720", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>4. beyond classical search</a></td>-->
+			                          <td width="260" align="center">
+			                          <a target="_top" href="/uploadFile/downloadFile_student.jsp?module_id=322&filePath=LBrqJi78mLJtnRMenypiUzrM0nq%2B6LdWcJbs3AhsUuEOEoqwDLsWDePT4kK6fSapXv3UqmYOL/IVYfXu5YGuSApsvo3W3p9pKppRDh46vwM%3D&course_id=92742&file_id=864720" >
+			                          4.&nbsp;beyond&nbsp;classical&nbsp;search
+			                          </a>
+			                          </td>
+			                          <td width="300" align="center">local search, search with undeterministic actions, search with Partial Observations, to be continued</td>
+			                          <td width="80" align="center">1.12M</td>
+			                          <td width="100" align="center">2012-10-09</td>
+			                         </tr>			                        
+									  
+					
+									  <tr class="tr1">
+
+
+			                          <td width="80">8</td>
+			                          <!--<td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92742&getfilelink=beyond_classical_search_514608474.pdf&id=868972","868972", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>4. beyond classical search (co</a></td>-->
+			                          <td width="260" align="center">
+			                          <a target="_top" href="/uploadFile/downloadFile_student.jsp?module_id=322&filePath=LBrqJi78mLJtnRMenypiUzrM0nq%2B6LdW6jmYqnCs/59rFfTVzIr8Wmud16tlO5xIaA7M1igjs1iXKLtd4wUiRNN/ICMp4X4GMVS4s%2BKPcTg%3D&course_id=92742&file_id=868972" >
+			                          4.&nbsp;beyond&nbsp;classical&nbsp;search&nbsp;(co
+			                          </a>
+			                          </td>
+			                          <td width="300" align="center">local search, search with undeterministic actions, search with Partial Observations, online search</td>
+			                          <td width="80" align="center">1.85M</td>
+			                          <td width="100" align="center">2012-10-17</td>
+			                         </tr>			                        
+									  
+										<tr class="tr2">
+   
+
+			                          <td width="80">9</td>
+			                          <!--<td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92742&getfilelink=adversarial_search_642905562.pdf&id=868975","868975", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>5. adversarial_search</a></td>-->
+			                          <td width="260" align="center">
+			                          <a target="_top" href="/uploadFile/downloadFile_student.jsp?module_id=322&filePath=P8jkUWmYWnfv0Eli8ivpPZLV6rUrI02mtmcfzMINf4sKbiwSJdJy6P%2B/HDm44CNC&course_id=92742&file_id=868975" >
+			                          5.&nbsp;adversarial_search
+			                          </a>
+			                          </td>
+			                          <td width="300" align="center">minimax algorithm, alpha-beta pruning, expectminimax algorithm</td>
+			                          <td width="80" align="center">0.99M</td>
+			                          <td width="100" align="center">2012-10-17</td>
+			                         </tr>			                        
+									  
+					
+									  <tr class="tr1">
+
+
+			                          <td width="80">10</td>
+			                          <!--<td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92742&getfilelink=constrained_satisfaction_problems_545303820.pdf&id=872851","872851", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>6. CSP</a></td>-->
+			                          <td width="260" align="center">
+			                          <a target="_top" href="/uploadFile/downloadFile_student.jsp?module_id=322&filePath=QvDrjSkcCuGfci3k9KR0SeWjZKOYQjuD1ViTNPBdIVFFVg2nEniDiDPJryqN9bG4lS%2BKP2XHc0SFZLoivC3Mvw/EiRZao6RdPPQAm7skaoc%3D&course_id=92742&file_id=872851" >
+			                          6.&nbsp;CSP
+			                          </a>
+			                          </td>
+			                          <td width="300" align="center">constrained_satisfaction_problems, backtracing algorithm</td>
+			                          <td width="80" align="center">865.8K</td>
+			                          <td width="100" align="center">2012-10-24</td>
+			                         </tr>			                        
+									  
+										<tr class="tr2">
+   
+
+			                          <td width="80">11</td>
+			                          <!--<td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92742&getfilelink=logical_agents-part_9565077.pdf&id=872856","872856", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>7. logical agents</a></td>-->
+			                          <td width="260" align="center">
+			                          <a target="_top" href="/uploadFile/downloadFile_student.jsp?module_id=322&filePath=ymoogDr/O87VS40F2iT4TuRzlYM7/euG%2BXamg9RcxiYaoWLuFAJkPmMrAHx3LGMAYRUk1ewOy7w%3D&course_id=92742&file_id=872856" >
+			                          7.&nbsp;logical&nbsp;agents
+			                          </a>
+			                          </td>
+			                          <td width="300" align="center">knowledge based agents</td>
+			                          <td width="80" align="center">705.3K</td>
+			                          <td width="100" align="center">2012-10-24</td>
+			                         </tr>			                        
+									  
+					
+									  <tr class="tr1">
+
+
+			                          <td width="80">12</td>
+			                          <!--<td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92742&getfilelink=logical_agents_199607228.pdf&id=877703","877703", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>7. logical agents (completed v</a></td>-->
+			                          <td width="260" align="center">
+			                          <a target="_top" href="/uploadFile/downloadFile_student.jsp?module_id=322&filePath=ymoogDr/O87VS40F2iT4TuRzlYM7/euG5BeybIe/wJjWipgdqH00lyrvNsro/VzTquKnE6540M0%3D&course_id=92742&file_id=877703" >
+			                          7.&nbsp;logical&nbsp;agents&nbsp;(completed&nbsp;v
+			                          </a>
+			                          </td>
+			                          <td width="300" align="center">knowledge based agents; logic; propositional (Boolean) logic; Inference rules and theorem proving</td>
+			                          <td width="80" align="center">914.6K</td>
+			                          <td width="100" align="center">2012-11-01</td>
+			                         </tr>			                        
+									  
+										<tr class="tr2">
+   
+
+			                          <td width="80">13</td>
+			                          <!--<td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92742&getfilelink=uncertainty-part-20121030_982404293.pdf&id=877714","877714", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>8. Uncertainty</a></td>-->
+			                          <td width="260" align="center">
+			                          <a target="_top" href="/uploadFile/downloadFile_student.jsp?module_id=322&filePath=mPdbCTa8P8BCQq8u3PrJM6SejnPknMZDkVQeJd3xuIMMVe%2BM3KPUPcijxD55gXpO5vdzH3bkRTHPoZ0yEiTHzJpU%2B/X%2BnbAQTQdOmUZlAuk%3D&course_id=92742&file_id=877714" >
+			                          8.&nbsp;Uncertainty
+			                          </a>
+			                          </td>
+			                          <td width="300" align="center">Uncertainty; Probability; Syntax and Semantics</td>
+			                          <td width="80" align="center">268.4K</td>
+			                          <td width="100" align="center">2012-11-05</td>
+			                         </tr>			                        
+									  
+					
+									  <tr class="tr1">
+
+
+			                          <td width="80">14</td>
+			                          <!--<td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92742&getfilelink=uncertainty_84904807.pdf&id=880861","880861", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>8. Uncertainty (completed vers</a></td>-->
+			                          <td width="260" align="center">
+			                          <a target="_top" href="/uploadFile/downloadFile_student.jsp?module_id=322&filePath=mPdbCTa8P8BCQq8u3PrJM6SejnPknMZDyzjH1ZKXg/cHO%2B6kmWPTjHR7xLgGvsfiTMiiJfiZSKo%3D&course_id=92742&file_id=880861" >
+			                          8.&nbsp;Uncertainty&nbsp;(completed&nbsp;vers
+			                          </a>
+			                          </td>
+			                          <td width="300" align="center">Uncertainty; Probability; Syntax and Semantics; Independence
+and Conditional Independence; Inference</td>
+			                          <td width="80" align="center">351.4K</td>
+			                          <td width="100" align="center">2012-11-07</td>
+			                         </tr>			                        
+									  
+										<tr class="tr2">
+   
+
+			                          <td width="80">15</td>
+			                          <!--<td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92742&getfilelink=bayesian_networks-part-20121106_217406027.pdf&id=880862","880862", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>9. Bayesian networks</a></td>-->
+			                          <td width="260" align="center">
+			                          <a target="_top" href="/uploadFile/downloadFile_student.jsp?module_id=322&filePath=ll05CgMIj%2BoqqtGtv9Ti9pzZKp4aSw9A5qJ3c8N6ixJk1DTDss%2B8ZIBJjfDkhIzJBk18rMc3vs2WUFG2gpIeKvIAfMFfgWSilYdK5WMP/34%3D&course_id=92742&file_id=880862" >
+			                          9.&nbsp;Bayesian&nbsp;networks
+			                          </a>
+			                          </td>
+			                          <td width="300" align="center">Syntax; Semantics; Parameterized distributions</td>
+			                          <td width="80" align="center">384.9K</td>
+			                          <td width="100" align="center">2012-11-07</td>
+			                         </tr>			                        
+									  
+					
+									  <tr class="tr1">
+
+
+			                          <td width="80">16</td>
+			                          <!--<td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92742&getfilelink=bayesian_networks_233201991.pdf&id=885257","885257", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>9. Bayesian networks (complet</a></td>-->
+			                          <td width="260" align="center">
+			                          <a target="_top" href="/uploadFile/downloadFile_student.jsp?module_id=322&filePath=ll05CgMIj%2BoqqtGtv9Ti9pzZKp4aSw9AbJq4oJlHmxKzW5dQW%2BKaQJ%2BxMkjaW8lJcjvm0y6V%2BFc%3D&course_id=92742&file_id=885257" >
+			                          9.&nbsp;Bayesian&nbsp;networks&nbsp;(complet
+			                          </a>
+			                          </td>
+			                          <td width="300" align="center">Syntax; Semantics; Parameterized distributions; Inference</td>
+			                          <td width="80" align="center">0.95M</td>
+			                          <td width="100" align="center">2012-11-14</td>
+			                         </tr>			                        
+									  						
+			              
+			         
+        </table>
+		   </div>
+	        	
+		   <div id="Layer2" style="position:absolute; left:19px; top:88px; width:100%; z-index:1;
+ visibility: hidden;		   	
+		   	">
+		    		<table  id="table_box" cellspacing="1" cellpadding="0">
+               <tr valign="top">
+                  <td width="80" class="title">
+                 	<a href="download.jsp?ordername=position&orderby=2&default_cate=2&course_id=92742">序号</a>
+                 
+                 
+                 
+                 
+                 </td>
+                 <td width="260" class="title">
+                 	<a href="download.jsp?ordername=title&orderby=2&default_cate=2&course_id=92742">标题</a>
+                 
+                 </td>
+                 <td width="300" class="title">简要说明</td>
+                 <td width="80" class="title">文件大小</td>
+                 
+                 <td width="100" class="title">
+                 	
+                 	<a href="download.jsp?ordername=reg_date&orderby=2&default_cate=2&course_id=92742">上载时间</a>
+                 
+               	 </td>
+                 </tr>
+               
+
+										<tr class="tr2">
+   
+
+			                          <td width="80">1</td>
+			                          <!--<td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92742&getfilelink=tutorial_409606068.zip&id=859569","859569", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>0. Python Tutorial</a></td>-->
+			                          <td width="260" align="center">
+			                          <a target="_top" href="/uploadFile/downloadFile_student.jsp?module_id=322&filePath=HtvVBV/olmbZCbS2Pm1OLPcYpG/jN9WTEJSFu5vMU1dLaP%2B/LnAYtmAhKE/dBWuKwRFim8jXjtg%3D&course_id=92742&file_id=859569" >
+			                          0.&nbsp;Python&nbsp;Tutorial
+			                          </a>
+			                          </td>
+			                          <td width="300" align="center">Python Tutorial. from http://www-inst.eecs.berkeley.edu/~cs188/fa11/projects/tutorial/tutorial.html</td>
+			                          <td width="80" align="center">26.3K</td>
+			                          <td width="100" align="center">2012-09-25</td>
+			                         </tr>			                        
+									  
+					
+									  <tr class="tr1">
+
+
+			                          <td width="80">2</td>
+			                          <!--<td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92742&getfilelink=search_823809018.zip&id=859568","859568", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>1. search in PacMan</a></td>-->
+			                          <td width="260" align="center">
+			                          <a target="_top" href="/uploadFile/downloadFile_student.jsp?module_id=322&filePath=0ytj4Rh8jXheulmFSAIuNsQ/EVjbB9X6312I6cUBUsZPuBMVDVT7xkRJQHcWcyz6U2q22YuF4RQ%3D&course_id=92742&file_id=859568" >
+			                          1.&nbsp;search&nbsp;in&nbsp;PacMan
+			                          </a>
+			                          </td>
+			                          <td width="300" align="center">search in PacMan. from http://inst.eecs.berkeley.edu/~cs188/fa11/projects/search/search.html</td>
+			                          <td width="80" align="center">141.4K</td>
+			                          <td width="100" align="center">2012-09-25</td>
+			                         </tr>			                        
+									  
+										<tr class="tr2">
+   
+
+			                          <td width="80">3</td>
+			                          <!--<td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92742&getfilelink=Guidelines to Project I (2012)_80205223.pptx&id=864760","864760", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>Project 1答疑ppt</a></td>-->
+			                          <td width="260" align="center">
+			                          <a target="_top" href="/uploadFile/downloadFile_student.jsp?module_id=322&filePath=uK%2BYBE2MjjNLi3JD95AuXt5YHU7Gr2owqI7hy6oE7DfwTapSN/XhISybxHD4LsAP6zUHnJqd1NzUJcW82MQlRAsZGAaXdu5oYckPSgmjXPQ%3D&course_id=92742&file_id=864760" >
+			                          Project&nbsp;1答疑ppt
+			                          </a>
+			                          </td>
+			                          <td width="300" align="center"></td>
+			                          <td width="80" align="center">377.9K</td>
+			                          <td width="100" align="center">2012-10-09</td>
+			                         </tr>			                        
+									  
+					
+									  <tr class="tr1">
+
+
+			                          <td width="80">4</td>
+			                          <!--<td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92742&getfilelink=multiagent_494203956.zip&id=868999","868999", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>2. Multi-Agent Pacman</a></td>-->
+			                          <td width="260" align="center">
+			                          <a target="_top" href="/uploadFile/downloadFile_student.jsp?module_id=322&filePath=6YCUsWyWBz2Z445RFJuReSlNPWI/ecHBdPgNU36bJeTwB8SgYQAwCKD7QXcvznbIeWxmRswQXWI%3D&course_id=92742&file_id=868999" >
+			                          2.&nbsp;Multi-Agent&nbsp;Pacman
+			                          </a>
+			                          </td>
+			                          <td width="300" align="center">http://inst.eecs.berkeley.edu/~cs188/fa11/projects/multiagent/multiagentProject.html</td>
+			                          <td width="80" align="center">98.7K</td>
+			                          <td width="100" align="center">2012-10-17</td>
+			                         </tr>			                        
+									  
+										<tr class="tr2">
+   
+
+			                          <td width="80">5</td>
+			                          <!--<td width="200" align="left"><a href="#" onclick='window.open("download_locate.jsp?Course_ID=92742&getfilelink=Guidelines to Project II_862708688.pptx&id=880370","880370", "status=yes,resizable=yes,scrollbars=yes,width=400,height=150，left=100,top=100");'>Project 2答疑ppt</a></td>-->
+			                          <td width="260" align="center">
+			                          <a target="_top" href="/uploadFile/downloadFile_student.jsp?module_id=322&filePath=uK%2BYBE2MjjNLi3JD95AuXt5YHU7Gr2owi0/M%2BfDYLt9hijnXNbVXcQ/iLmNwuBSwh/AgOvfqhxHVteq6TQartCUu4Ijm%2BRyTHWtyWtEdB3c%3D&course_id=92742&file_id=880370" >
+			                          Project&nbsp;2答疑ppt
+			                          </a>
+			                          </td>
+			                          <td width="300" align="center"></td>
+			                          <td width="80" align="center">255.2K</td>
+			                          <td width="100" align="center">2012-11-06</td>
+			                         </tr>			                        
+									  						
+			              
+			         
+        </table>
+		   </div>
+		   
+		   
+	    </td>
+      </tr>
+    </table>	
+    </td>
+  </tr>
+</table>
+</body>
+</html>
+<SCRIPT>
+function check_del(file_id,course_id,category,position,maxPos,filelink){
+  if (confirm("真的要删除这个文件吗？")) {
+   document.location.replace("download_action.jsp?file_id="+escape(file_id)+"&category="+escape(category)+"&position="+escape(position)+"&maxPos="+escape(maxPos)+"&filelink="+filelink+"&course_id="+course_id);   
+  }
+}
+function check_edit(temp)
+{
+   document.location.replace(temp);
+}
+</SCRIPT>
